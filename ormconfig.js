@@ -3,7 +3,7 @@ module.exports = {
   url: process.env.DATABASE_URL,
   database: 'whos_up_next',
   synchronize: true,
-  logging: false,
+  logging: true,
   entities: ['src/entity/**/*.ts'],
   migrations: ['src/migration/**/*.ts'],
   subscribers: ['src/subscriber/**/*.ts'],
