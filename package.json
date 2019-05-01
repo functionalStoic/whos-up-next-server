@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "description": "Awesome project developed with TypeORM.",
   "devDependencies": {
-    "@types/node": "^8.0.29",
+    "@types/node": "8.10.45",
     "ts-node": "3.3.0",
     "typescript": "2.5.2"
   },
   "dependencies": {
-    "dotenv": "^7.0.0",
-    "graphql-yoga": "^1.17.4",
-    "knex": "^0.16.5",
-    "pg": "^7.10.0",
-    "reflect-metadata": "^0.1.10",
+    "dotenv": "7.0.0",
+    "graphql-yoga": "1.17.4",
+    "knex": "0.16.5",
+    "pg": "7.10.0",
+    "reflect-metadata": "0.1.13",
     "typeorm": "0.2.16"
   },
   "scripts": {
