@@ -1,4 +1,10 @@
-# Awesome Project Build with TypeORM
+# Who's up next
+
+- people list with ordering
+- category of people (kids, friends, family, manager)
+- events ordered by completed at
+
+## Awesome Project Build with TypeORM
 
 Steps to run this project:
 
