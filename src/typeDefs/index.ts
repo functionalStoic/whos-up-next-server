@@ -44,6 +44,7 @@ type Person {
   id: ID!
   firstName: String!
   lastName: String!
+  description: String!
   category: Category!
   events: [Event!]
 }
