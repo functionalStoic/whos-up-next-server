@@ -65,6 +65,10 @@ input PersonInput {
   events: [EventInput!]
 }
 
+input GenericIdInput {
+  id: ID!
+}
+
 type PersonPayload {
   person: Person
   error: String
@@ -88,13 +92,13 @@ type Mutation {
   createCategory(
     title: String!
     description: String!
-    people: [PersonInput!]
+    people: [GenericIdInput!]
   ): CategoryPayload
   createEvent(
     title: String!
     description: String!
-    people: [PersonInput!]
+    people: [GenericIdInput!]
   ): EventPayload
-  createPerson(firstName: String!, lastName: String!): PersonPayload
+  createPerson(firstName: String!, lastName: String!, description: String!, category: ID!): PersonPayload
 }
 `;

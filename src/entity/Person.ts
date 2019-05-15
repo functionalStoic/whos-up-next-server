@@ -4,7 +4,7 @@ import {
   Column,
   ManyToOne,
   ManyToMany,
-  JoinTable
+  JoinTable,
 } from 'typeorm';
 import { Category } from './Category';
 import { Event } from './Event';
@@ -14,7 +14,7 @@ interface IProps {
   firstName: string;
   lastName: string;
   description: string;
-  category?: Category;
+  category: number;
 }
 
 @Entity()

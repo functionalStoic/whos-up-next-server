@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, Unique } from 'typeorm';
 import { getConnection } from 'typeorm';
 
 interface IProps {
@@ -8,6 +8,7 @@ interface IProps {
 }
 
 @Entity()
+@Unique(['email'])
 export class User {
   static create(props: IProps) {
     const user = Object.assign(new User(), props);

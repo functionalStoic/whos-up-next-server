@@ -5,7 +5,7 @@ import {
   OneToMany,
   ManyToOne,
   ManyToMany,
-  JoinTable
+  JoinTable,
 } from 'typeorm';
 import { Person } from './Person';
 import { getConnection } from 'typeorm';
@@ -13,7 +13,7 @@ import { getConnection } from 'typeorm';
 interface IProps {
   title: string;
   description: string;
-  people?: Person;
+  people?: Person[];
 }
 
 @Entity()
