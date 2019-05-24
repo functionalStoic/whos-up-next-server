@@ -4,7 +4,8 @@ import {
   Column,
   ManyToOne,
   ManyToMany,
-  JoinTable,
+  CreateDateColumn,
+  UpdateDateColumn,
 } from 'typeorm';
 import { Category } from './Category';
 import { Event } from './Event';
@@ -46,4 +47,10 @@ export class Person {
 
   @ManyToMany(type => Event, event => event.people)
   events: Promise<Event[]>;
+
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @UpdateDateColumn()
+  updatedAt: Date;
 }

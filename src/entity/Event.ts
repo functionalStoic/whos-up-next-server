@@ -2,10 +2,10 @@ import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
-  OneToMany,
-  ManyToOne,
   ManyToMany,
   JoinTable,
+  CreateDateColumn,
+  UpdateDateColumn,
 } from 'typeorm';
 import { Person } from './Person';
 import { getConnection } from 'typeorm';
@@ -40,4 +40,10 @@ export class Event {
   @ManyToMany(type => Person, person => person.events)
   @JoinTable()
   people: Promise<Person[]>;
+
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @UpdateDateColumn()
+  updatedAt: Date;
 }

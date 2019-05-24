@@ -1,4 +1,12 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+  CreateDateColumn,
+  UpdateDateColumn,
+  Unique,
+} from 'typeorm';
 import { Person } from './Person';
 import { getConnection } from 'typeorm';
 
@@ -9,6 +17,7 @@ interface IProps {
 }
 
 @Entity()
+@Unique(['title'])
 export class Category {
   static create(props: IProps) {
     const category = Object.assign(new Category(), props);
@@ -31,4 +40,10 @@ export class Category {
 
   @OneToMany(type => Person, person => person.category)
   people: Promise<Person[]>;
+
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @UpdateDateColumn()
+  updatedAt: Date;
 }
