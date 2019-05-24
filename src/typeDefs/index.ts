@@ -90,6 +90,7 @@ type Query {
   categories: [Category]
   events: [Event]
   people: [Person]
+  nextPerson: Person
 }
 
 type Mutation {
