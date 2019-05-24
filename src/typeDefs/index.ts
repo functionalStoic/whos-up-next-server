@@ -9,6 +9,8 @@ type User {
   firstName: String!
   lastName: String!
   email: String!
+  createdAt: String
+  updatedAt: String
 }
 
 type UserPayload {
@@ -21,6 +23,8 @@ type Category {
   title: String!
   description: String!
   people: [Person!]
+  createdAt: String
+  updatedAt: String
 }
 
 type CategoryPayload {
@@ -33,6 +37,8 @@ type Event {
   title: String!
   description: String!
   people: [Person!]
+  createdAt: String
+  updatedAt: String
 }
 
 type EventPayload {
@@ -47,6 +53,8 @@ type Person {
   description: String!
   category: Category!
   events: [Event!]
+  createdAt: String
+  updatedAt: String
 }
 
 input EventInput {
