@@ -14,10 +14,16 @@
     "typescript": "3.6.3"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "ts-node src/index.ts",
     "test": "jest"
   },
   "devDependencies": {
     "jest": "24.9.0"
+=======
+    "start": "yarn ts-node src/index.ts",
+    "generateMigration": "yarn ts-node ./node_modules/typeorm/cli.js migration:generate -n ",
+    "runMigration": "yarn ts-node ./node_modules/typeorm/cli.js migration:run"
+>>>>>>> feat(build): add migration scripts
   }
 }
