@@ -6,7 +6,7 @@
   "dependencies": {
     "@types/node": "11.13.19",
     "dotenv": "8.1.0",
-    "graphql-yoga": "1.18.1",
+    "graphql-yoga": "1.18.2",
     "pg": "7.12.1",
     "reflect-metadata": "0.1.13",
     "ts-node": "8.3.0",
