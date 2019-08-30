@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "description": "Awesome project developed with TypeORM.",
   "dependencies": {
-    "@types/node": "11.13.19",
+    "@types/node": "11.13.20",
     "dotenv": "8.1.0",
     "graphql-yoga": "1.18.3",
     "pg": "7.12.1",
